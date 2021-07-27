@@ -1,0 +1,76 @@
+<html>
+    <title>forms</title>
+    <body>
+        <form method="get">
+            
+        <table>
+            <tr>
+                <td>rollNo</td>
+                <td><input type="text" name="rollno"/></td>
+            </tr>
+            <tr>
+                <td>Enter the name</td>
+                <td><input type="text" name="Student_ name" required/></td>
+            </tr>
+            <tr>
+                <td>Enter the name with pattern</td>
+                <td><input type="text" name="Student_ name" pattern="[A-za-z]{*}" required/></td>
+            </tr>
+            <tr>
+                  <td>password</td>
+                <td><input type="password" name="password" min=8 max =16 required/></td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td><input type="radio" name="gender" value="male"/>male</td>
+                <td><input type="radio" name="gender" value="female"/>female</td>
+                <td><input type="radio" name="gender" value="other"/>others</td>
+            </tr>
+            <tr required >
+                <td>languages</td>
+                <td><input type="checkbox" name="Tamil" value="language" />Tamil</td>
+                <td><input type="checkbox" name="English" value="language"/>English</td>
+                <td><input type="checkbox" name="Hindi" value="language" />Hindi</td>
+            </tr>
+            <tr>
+                <td>dept</td>
+                <td>
+                <select name="Dept">
+                    <option value="IT">Information Technology</option>
+                    <option value="CSE" selected>Computer Science </option>
+                    <option value="FT">Food Tech</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hidden field</td>
+                <td><input type="hidden" name="refno" value="67213"></td>
+            </tr>
+            <tr>
+                <td>input in disabled</td>
+                <td><input type ="text" name "ID" value="19ITR" disabled></td>
+            </tr>
+            <tr>
+                <td>upload</td>
+              <td><input type="file" name="password" min=8 max =16 required/></td>
+          </tr>
+            <tr>
+                <td>input in readonly</td>
+                <td><input type ="text" name "ID" value="19ITR" readonly></td>
+            </tr>
+            <tr>
+                <td>Enter the DOB</td>
+                <td><input type="date" name='DOB'></td>
+            </tr>
+            <tr>
+                <td>Enter the number</td>
+                <td><input id="roll number" type='number' step=0.1 min =5 max=70></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit"></td>
+                <td><input type="reset" name"reset"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
