@@ -1,31 +1,40 @@
 <html>
-    <title>forms</title>
+    <title>Registration</title>
     <body>
         <form method="get">
             
         <table>
             <tr>
-                <td>rollNo</td>
-                <td><input type="text" name="rollno"/></td>
-            </tr>
-            <tr>
                 <td>Enter the name</td>
-                <td><input type="text" name="Student_ name" required/></td>
+                <td><input type="text" name="Student_ name" pattern="[A-za-z]{*}" required/></td>
             </tr>
             <tr>
-                <td>Enter the name with pattern</td>
-                <td><input type="text" name="Student_ name" pattern="[A-za-z]{*}" required/></td>
+                <td>Enter the DOB</td>
+                <td><input type="date" name='DOB'></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="male"/>male
+                <input type="radio" name="gender" value="female"/>female
+                <input type="radio" name="gender" value="other"/>others</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email ID" required/></td>
+            </tr>
+            <tr>
+                <td>address</td>
+                <td><input type="address" name="address"/></td>
+          </tr>
+            <tr>
+                <td>Mobile number</td>
+                <td><input type="number" name="Mobile" min=10 max =10 required/></td>
             </tr>
             <tr>
                   <td>password</td>
                 <td><input type="password" name="password" min=8 max =16 required/></td>
             </tr>
-            <tr>
-                <td>gender</td>
-                <td><input type="radio" name="gender" value="male"/>male</td>
-                <td><input type="radio" name="gender" value="female"/>female</td>
-                <td><input type="radio" name="gender" value="other"/>others</td>
-            </tr>
+
             <tr required >
                 <td>languages</td>
                 <td><input type="checkbox" name="Tamil" value="language" />Tamil</td>
@@ -58,10 +67,7 @@
                 <td>input in readonly</td>
                 <td><input type ="text" name "ID" value="19ITR" readonly></td>
             </tr>
-            <tr>
-                <td>Enter the DOB</td>
-                <td><input type="date" name='DOB'></td>
-            </tr>
+           
             <tr>
                 <td>Enter the number</td>
                 <td><input id="roll number" type='number' step=0.1 min =5 max=70></td>
