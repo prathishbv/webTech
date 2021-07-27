@@ -23,12 +23,48 @@
                 <td><input type="email" name="email ID" required/></td>
             </tr>
             <tr>
-                <td>address</td>
-                <td><input type="address" name="address"/></td>
-          </tr>
-            <tr>
                 <td>Mobile number</td>
-                <td><input type="number" name="Mobile" min=10 max =10 required/></td>
+                <td><input type="number" name="Mobile" pattern="[1-9]{*}" required/></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="address" name="address"/></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>
+                <select name="state">
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CG">Chhattisgarh</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="WB">West Bengal</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Orissa</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN" selected>Tamil Nadu</option>
+                    <option value="TE">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UK">Uttarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                </select>
+                </td>
             </tr>
             <tr>
                   <td>password</td>
