@@ -1,20 +1,22 @@
 <html>
     <title>Registration</title>
-    <body>
+    <body bgcolor="pink">
+        <div style="background-image: url('1583747992phpzaxKKK.jpeg');"></div>
+        <h1 align="center" style="bold" style="ALGERIAN">EVENT REGISTRATION</h1>
         <form method="get">
             
         <table>
             <tr>
                 <td>Enter the name</td>
-                <td><input type="text" name="Student_ name" pattern="[A-za-z]{*}" required/></td>
+                <td><input type="text" name="Student_ name" placeholder="Enter your name" pattern="[A-za-z]{*}" required/></td>
             </tr>
             <tr>
                 <td>Enter the DOB</td>
-                <td><input type="date" name='DOB'></td>
+                <td><input type="date" name='DOB' placeholder="DOB"></td>
             </tr>
             <tr>
                 <td>Gender</td>
-                <td><input type="radio" name="gender" value="male"/>male
+                <td><input type="radio" placeholder="Gender" name="gender" value="male"/>male
                 <input type="radio" name="gender" value="female"/>female
                 <input type="radio" name="gender" value="other"/>others</td>
             </tr>
@@ -27,9 +29,9 @@
                 <td><input type="number" name="Mobile" pattern="[1-9]{*}" required/></td>
             </tr>
             <tr>
-                <td>Address</td>
-                <td><input type="address" name="address"/></td>
-            </tr>
+                <td> ADDRESS :</td>
+                <td><textarea rows="5" col="15" placeholder="Type your adderss"></textarea></td>
+                </tr>
             <tr>
                 <td>State</td>
                 <td>
@@ -67,15 +69,33 @@
                 </td>
             </tr>
             <tr>
-                  <td>password</td>
-                <td><input type="password" name="password" min=8 max =16 required/></td>
+                <td>pincode</td>
+                <td><input type="number" name="pincode" pattern="[1-9]{6}" required/></td>
             </tr>
-
-            <tr required >
-                <td>languages</td>
-                <td><input type="checkbox" name="Tamil" value="language" />Tamil</td>
-                <td><input type="checkbox" name="English" value="language"/>English</td>
-                <td><input type="checkbox" name="Hindi" value="language" />Hindi</td>
+            <tr>
+                <td>Event</td>
+                <td>
+                    <input type="checkbox" name="Event" value="Technical Event"/>
+                <select name="Event" multiple>
+                    <option value="TE" selected>Technical Event</option>
+                    <option value="CB">code breaker</option>
+                    <option value="PP">paper presentation</option>
+                    <option value="IP">idea presentation</option>
+                    <option value="PRP">project presentation</option>
+                    <option value="DE">debugging</option>
+                </select>
+                </td>
+                <td>
+                    <input type="checkbox" name="Event" value="Non-Technical Event"/>
+                <select name="Event" multiple>
+                    <option value="NTE" selected>Non-Technical Event</option>
+                    <option value="Sp">solo performance</option>
+                    <option value="SA">sktch art</option>
+                    <option value="BP">Brushless painting</option>
+                    <option value="SuP">Sudoko</option>
+                    <option value="IPL">IPL auction</option>
+                </select>
+                </td>
             </tr>
             <tr>
                 <td>dept</td>
@@ -87,27 +107,9 @@
                 </select>
                 </td>
             </tr>
-            <tr>
-                <td>Hidden field</td>
-                <td><input type="hidden" name="refno" value="67213"></td>
-            </tr>
-            <tr>
-                <td>input in disabled</td>
-                <td><input type ="text" name "ID" value="19ITR" disabled></td>
-            </tr>
-            <tr>
-                <td>upload</td>
-              <td><input type="file" name="password" min=8 max =16 required/></td>
+            <td>Upload Resume</td>
+              <td><input type="file" name="file"/></td>
           </tr>
-            <tr>
-                <td>input in readonly</td>
-                <td><input type ="text" name "ID" value="19ITR" readonly></td>
-            </tr>
-           
-            <tr>
-                <td>Enter the number</td>
-                <td><input id="roll number" type='number' step=0.1 min =5 max=70></td>
-            </tr>
             <tr>
                 <td><input type="submit" name="submit"></td>
                 <td><input type="reset" name"reset"></td>
