@@ -1,0 +1,79 @@
+<html>
+    <style>
+        .full{
+            font-family: "Raleway", sans-serif;
+            background-color: #f1f1f1;
+        }
+        .marker{
+            content: "\f041";
+        }
+        *:before{
+            box-sizing: inherit;
+        }
+        .button{
+            color: #fff;
+            background-color: #000;
+            display: inline-block;
+        }
+        .bar1:hover{
+            background-color: grey;
+        }
+        .bar1{
+            margin: 0%;
+            padding: 15px;
+            float: right;
+        }
+        .nav1{
+            font-family: "Raleway", sans-serif;
+            color:#000000;
+            font-size: 15px;
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+        .bar{
+            color: #000000;
+        }
+        .bar:hover {
+            opacity: 0.8;
+        }
+        ul{
+            display: inline-block;
+            padding-right: 20px;
+            color: black;
+        }
+        
+        li a{
+            text-decoration: none;
+        }
+    </style>
+    <body class="full">
+        <div >
+            <li class="nav1">
+                <ul>LOGO</ul>
+                <ul class="bar1"><a href="website.html" class="bar">Login</a></ul>
+                <ul class="bar1"><a href="about.html" class="bar">About</a></ul>
+                <ul class="bar1"><a href="contact.html" class="bar">Contact</a></ul>
+                <ul class="bar1"><a href="logo.html" class="bar">Home</ul>
+            </li>
+        </div>
+        <p style="font-size: 24px; margin: 10px 0px; text-align: center;">CONTACT</p>
+        <p style="text-align: center; font-size: 18px;">Lets get in touch. Send us a message</p>
+        <p>
+            <input type="text" placeholder="Name" required>
+        </p>
+        <p>
+            <input type="text" placeholder="Email" required>
+        </p> 
+        <p> 
+            <input type="text" placeholder="Subject" required>
+        </p>
+        <p>
+            <input type="text" placeholder="Message" required>
+        </p>
+        
+        <p>
+            <button type="submit" class="button">SEND MESSAGE</button>
+        </p>
+
+    </body>
+</html>
