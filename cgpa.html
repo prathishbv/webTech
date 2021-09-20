@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <title>CGPA</title>
+    <link rel="stylesheet" href="cgpa.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="head"><h1>CGPA CALCULATOR</h1></div>
+      <label>GPA 1</label><input type="text" id="gpa1" /><br />
+      <label>GPA 2</label><input type="text" id="gpa2" /><br />
+      <label>GPA 3</label><input type="text" id="gpa3" /><br />
+      <label>GPA 4</label><input type="text" id="gpa4" /><br />
+      <label>GPA 5</label><input type="text" id="gpa5" /><br />
+      <label>GPA 6</label><input type="text" id="gpa6" /><br />
+      <label>GPA 7</label><input type="text" id="gpa7" /><br />
+      <label>GPA 8</label><input type="text" id="gpa8" /><br />
+      <button id="btn1" type="button">GENERATE</button>
+      <button id="btn2" type="button">GRADE</button>
+    </div>
+
+    <div id="result">
+      <div id="head1"><h1>CGPA</h1></div>
+      <div id="cgpa"></div>
+      <div id="head2"><h1>GRADE</h1></div>
+      <div id="grade"></div>
+    </div>
+  </body>
+</html>
+<script>
+  const btn = document.getElementById('btn1');
+  btn.addEventListener('click', cgpa);
+  console.log(btn);
+
+  const btn2 = document.getElementById('btn2');
+  btn2.addEventListener('click', grade);
+  console.log(btn2);
+  function cgpa() {
+    var gpa1 = Number(document.getElementById('gpa1').value);
+    var gpa2 = parseInt(document.getElementById('gpa2').value);
+    var gpa3 = parseInt(document.getElementById('gpa3').value);
+    var gpa4 = parseInt(document.getElementById('gpa4').value);
+    var gpa5 = parseInt(document.getElementById('gpa5').value);
+    var gpa6 = parseInt(document.getElementById('gpa6').value);
+    var gpa7 = parseInt(document.getElementById('gpa7').value);
+    var gpa8 = parseInt(document.getElementById('gpa8').value);
+    if (
+      gpa1 > 10 ||
+      gpa2 > 10 ||
+      gpa3 > 10 ||
+      gpa4 > 10 ||
+      gpa5 > 10 ||
+      gpa6 > 10 ||
+      gpa7 > 10 ||
+      gpa8 > 10
+    ) {
+      alert('Please enter in the range of 10');
+    } else {
+      var total = gpa1 + gpa2 + gpa3 + gpa4 + gpa5 + gpa6 + gpa7 + gpa8;
+      var avg = total / 8;
+      document.getElementById('cgpa').textContent = 'CGPA : ' + avg;
+    }
+  }
+  function grade() {
+  
+    var gpa1 = Number(document.getElementById('gpa1').value);
+    var gpa2 = parseInt(document.getElementById('gpa2').value);
+    var gpa3 = parseInt(document.getElementById('gpa3').value);
+    var gpa4 = parseInt(document.getElementById('gpa4').value);
+    var gpa5 = parseInt(document.getElementById('gpa5').value);
+    var gpa6 = parseInt(document.getElementById('gpa6').value);
+    var gpa7 = parseInt(document.getElementById('gpa7').value);
+    var gpa8 = parseInt(document.getElementById('gpa8').value);
+    console.log(gpa1);
+    if (
+      gpa1 > 10 ||
+      gpa2 > 10 ||
+      gpa3 > 10 ||
+      gpa4 > 10 ||
+      gpa5 > 10 ||
+      gpa6 > 10 ||
+      gpa7 > 10 ||
+      gpa8 > 10
+    ) {
+      alert('Please enter in the range of 10');
+    } else {
+      var total = gpa1 + gpa2 + gpa3 + gpa4 + gpa5 + gpa6 + gpa7 + gpa8;
+      var avg = total / 8;
+      if (avg > 9 && avg <= 10) {
+        document.getElementById('grade').textContent = 'Grade : O Grade';
+      } else if (avg > 8) {
+        document.getElementById('grade').textContent = 'Grade : A+ Grade';
+      } else if (avg > 7) {
+        document.getElementById('grade').textContent = 'Grade : A Grade';
+      } else if (avg > 6) {
+        document.getElementById('grade').textContent = 'Grade : B+ Grade';
+      } else if (avg > 5) {
+        document.getElementById('grade').textContent = 'Grade : B Grade';
+      } else if (avg < 5) {
+        document.getElementById('grade').textContent = 'Grade : Reappear';
+      }
+    }
+  }
+</script>
